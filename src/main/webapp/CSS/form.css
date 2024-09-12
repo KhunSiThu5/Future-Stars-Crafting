@@ -9,7 +9,7 @@
     background-color: #000000a6;
     padding: 2rem;
     
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 

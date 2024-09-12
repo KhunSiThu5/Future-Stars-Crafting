@@ -28,16 +28,19 @@ public class videoFilter extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		//Video Type Filters
-		String vidType = request.getParameter("vidType");
+		
+		
 		List<Video> mainVidList = (List<Video>) session.getAttribute("mainVidList");
 		
-		if(vidType!=null)
+	
+		if(request.getParameter("vidType")!=null)
 		{
-			if(vidType.equals("all"))
+			String vidType = request.getParameter("vidType");
+			if(vidType.equals("All"))
 			{
 				session.setAttribute("vidList", mainVidList);
 				response.sendRedirect("videoPage.jsp");
-			} else if(vidType != null){
+			} else {
 				
 				List<Video> vid = new ArrayList<Video>();
 				

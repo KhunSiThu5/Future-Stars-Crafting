@@ -46,7 +46,7 @@
                     <div class="box">
 
                         <div class="vid-con">
-                            <a href="#"><i class="fa-solid fa-play" style="color: #ff7300;"></i></a>
+                            <a href="videoShowPage.jsp?vidId=<%=v.getVideoId() %>"><i class="fa-solid fa-play" style="color: #ff7300;"></i></a>
                             <%-- <video controls src="getVideoFile?videoId=<%=v.getVideoId()%>"></video> --%>
 							<img src="./IMAGE/profileImage.jpg" alt="" />
                         </div>

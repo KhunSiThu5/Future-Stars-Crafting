@@ -13,11 +13,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Page</title>
+    <title>FUTURE STAR CRAFTING</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./Layout/form.css" />
+    <link rel="stylesheet" href="./CSS/form.css" />
+    <link rel="stylesheet" href="./CSS/videoShow.css" />
     
 </head>
 
@@ -54,7 +55,7 @@
 	
        <div class="wrapper">
 
-        <aside id="sidebar" class="js-sidebar">
+        <aside id="sidebar" class="js-sidebar ">
             <!-- Content For Sidebar -->
             <div class="h-100">
 
@@ -63,6 +64,25 @@
                 </div>
 
                 <ul class="sidebar-nav">
+                
+                	<li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
+                            aria-expanded="false">
+                            Age Group
+                        </a>
+                        <ul id="posts" class="sidebar-dropdown list-unstyled collapse ms-4" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link links">All</a> 
+                 
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link links">3 to 5</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link links">6 to 9</a>
+                            </li>
+                        </ul>
+                    </li>
 
                     <li class="sidebar-header">
                         PAGES
@@ -75,6 +95,8 @@
                         </a>
                     </li>
                     
+                    
+                    
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
                             aria-expanded="false"><i class="fa-regular fa-circle-play pe-2"></i>
@@ -82,7 +104,7 @@
                         </a>
                         <ul id="posts" class="sidebar-dropdown list-unstyled collapse ms-4" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="videoFilter?vidType=all" disiabled type="button" class="sidebar-link links main-link">All</a>
+                                <a href="videoFilter?vidType=All" class="sidebar-link links">All</a>
                             </li>
                             <li class="sidebar-item">
                                 <a href="videoFilter?vidType=Education" class="sidebar-link links">Education</a>
@@ -103,7 +125,7 @@
                     </li>
 
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link links main-link">
+                        <a href="articlePage.jsp" class="sidebar-link links art-link">
                             <i class="fa-solid fa-book-open-reader pe-2"></i>
                             Article Page
                         </a>

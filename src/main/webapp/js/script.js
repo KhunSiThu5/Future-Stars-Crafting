@@ -3,6 +3,7 @@ sidebarToggle.addEventListener("click",function(){
     document.querySelector("#sidebar").classList.toggle("collapsed");
 });
 
+//document.querySelector("#sidebar").classList.add("collapsed")
 // document.querySelector(".theme-toggle").addEventListener("click",() => {
 //     toggleLocalStorage();
 //     toggleRootClass();
@@ -34,25 +35,17 @@ if(isLight()){
 
 const link = document.querySelectorAll(".links");
 const mainFormCon = document.querySelector(".main-form-con");
-const mainLink = document.querySelectorAll(".main-link");
+const artLink = document.querySelector(".art-link");
 
 let loginUser= true;
 
 let linkClick = localStorage.getItem("linkClicked");
 
-mainLink[0].addEventListener("click", () => {
-    if(loginUser != null)
-    {
-        mainLink[0].href = "videoPage.jsp"
-    } else {
-        //mainFormCon.style.display = "flex";
-    }
-})
 
-mainLink[1].addEventListener("click", () => {
+artLink.addEventListener("click", () => {
     if(loginUser != null)
     {
-        mainLink[1].href = "articlePage.jsp"
+        artLink.href = "articlePage.jsp"
     } else {
         mainFormCon.style.display = "flex";
     }

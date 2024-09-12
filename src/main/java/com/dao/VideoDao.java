@@ -21,8 +21,38 @@ public class VideoDao {
 		 PreparedStatement pstm = con.prepareStatement("select * from videos");
 		 
 		 ResultSet rs = pstm.executeQuery();
-		 
+		  
 		 while(rs.next())
+		 {
+			 Video v = new Video();
+			 
+			 v.setVideoId(rs.getInt(1));
+			 v.setVideoType(rs.getString(2));
+			 v.setVidLength(rs.getString(3));
+			 v.setVidLike(rs.getInt(4));
+			 v.setVidView(rs.getInt(5));
+			 v.setAgeGroup(rs.getString(6));
+			 v.setVidFileType(rs.getString(8));
+			 v.setVidTitle(rs.getString(9));
+			 
+			 list.add(v);
+		 }
+		 
+		 
+		return list;
+	}
+	
+	public List<Video> getVideoById (String vidId) throws ClassNotFoundException, SQLException {
+		List<Video> list = new ArrayList<Video>();
+		
+		MyConnection conobj = new MyConnection();
+		Connection con = conobj.getConnection();
+		
+		 PreparedStatement pstm = con.prepareStatement("select * from videos where videoId = ?");
+		 pstm.setInt(1, Integer.parseInt(vidId));
+		 ResultSet rs = pstm.executeQuery();
+		  
+		 if(rs.next())
 		 {
 			 Video v = new Video();
 			 

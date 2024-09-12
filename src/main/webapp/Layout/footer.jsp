@@ -1,5 +1,7 @@
 
-    <div class="main-form-con">
+    <%@page import="com.model.Video"%>
+<%@page import="java.util.List"%>
+<div class="main-form-con">
 
         <div class="form-con">
 
@@ -107,7 +109,7 @@
         </div>
 
     </div>
-
+    
 	<script src="./js/form.js"></script>
     <script  src="./js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>

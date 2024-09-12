@@ -1,4 +1,4 @@
-package com.dao;
+package com.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -11,6 +11,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import com.dao.MyConnection;
 
 public class getVideoFile extends HttpServlet {
 	private static final long serialVersionUID = 1L;
